@@ -6,4 +6,4 @@ class TestDiceSim(unittest.TestCase):
     def test_start_game(self):
         dice = Dice()
         n = [1,2,3,4,5,6]
-        self.assertTrue(dice.start_game().dice_num in n)
+        self.assertTrue(dice.dice_num in n)
