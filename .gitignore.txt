@@ -1,6 +1,0 @@
-.idea
-.class
-.jar
-/target
-/bin
-.git
