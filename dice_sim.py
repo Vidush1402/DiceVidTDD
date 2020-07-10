@@ -4,13 +4,13 @@ class Dice():
 
     def start_game(self):
         dice_num = random.randint(1,6)
-        return dice_num
+        print(dice_num)
 
     def play_again(self):
         again = input("Do you want to roll again?")
         if again.lower() == "y":
             return True
-        else:
+        elif again.lower() == "n":
             return False
 
     def game(self):
@@ -21,6 +21,11 @@ class Dice():
             bool = False
         while(bool):
             self.start_game()
+            if self.play_again():
+                bool = True
+            else:
+                bool = False
+        print("The end")
 
-
-
+dice = Dice()
+dice.game()
